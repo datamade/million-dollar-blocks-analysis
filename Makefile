@@ -27,6 +27,12 @@ reset_db :
 	"DROP TABLE IF EXISTS addresses"
 	rm *.table
 
+##########################################
+# NOTE:                                  #
+# REQUEST_11-0058_Criminal_2005-2009.raw #
+# is the raw data that’s not included in #
+# this repo due to its sensitive nature  #
+##########################################
 
 people.txt: REQUEST_11-0058_Criminal_2005-2009.raw
 	cat $< | grep "^[0].*"  > $@
