@@ -1,5 +1,11 @@
 # Chicago Million Dollar Blocks
 
+This repo contains the analysis behind the [Chicago Million Dollar Blocks project](http://chicagosmilliondollarblocks.com/)
+
+The convictions data comes from the Chicago Justice Project - for more information, see [Convicted In Cook](http://convictions.smartchicagoapps.org/)
+
+This repo does not contain the exact data that we used, which has sensitive information - namely, addresses. However, there is an [anonymized version of the convictions dataset](https://drive.google.com/folderview?id=0B_aXS4x_XvJmSVlLNUJqREpCUG8&usp=sharing).
+
 # Setup
 ```bash
 > createdb jail
@@ -29,11 +35,3 @@ Configure make in `config.mk` with your DB settings, then:
 ```bash
 > make
 ```
-
-# Results
-
-Images from QGIS using Jenks Natural Breaks based on total person years per block:
-
-![Mockup 1](https://raw.githubusercontent.com/datamade/chi-million-dollar-blocks/master/images/million-dollar-blocks-mockup-1.png?token=AA4IH6s9XNAlWO9xU2A4SEoBs8kKyLitks5U7mDVwA%3D%3D)
-
-![Mockup 2](https://raw.githubusercontent.com/datamade/chi-million-dollar-blocks/master/images/million-dollar-blocks-mockup-2.png?token=AA4IH25IsN1RT3P1RbB8tCsHd43Hn7OXks5U7mFEwA%3D%3D)
