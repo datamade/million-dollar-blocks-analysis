@@ -1,0 +1,4 @@
+csvkit
+psycopg2
+git+https://github.com/sc3/python-ilcs.git#egg=python-ilcs
+git+https://github.com/sc3/python-iucr.git#egg=python-iucr

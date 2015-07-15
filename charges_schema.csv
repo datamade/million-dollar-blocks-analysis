@@ -1,0 +1,17 @@
+column,start,length
+record_type,0,1
+case_number,1,13
+sequence_number,14,4
+statute,18,35
+charge_desc,53,30
+charge_type, 83, 1
+charge_class, 84, 1
+charge_disp_date, 85, 8
+charge_disp, 93, 30
+amended_charge_statute, 123, 35
+amended_charge_desc, 158, 30
+amended_charge_type, 188, 1
+amended_charge_class, 189, 1
+min_sentence, 190, 8
+max_sentence, 198, 8
+fine_amount, 206, 7
