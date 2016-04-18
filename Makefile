@@ -29,16 +29,16 @@ reset_db :
 
 ##########################################
 # NOTE:                                  #
-# REQUEST_11-0058_Criminal_2005-2009.raw #
+# REQUEST_11-0058_Criminal_2005-2009.txt #
 # is the raw data that’s not included in #
 # this repo due to its sensitive nature  #
 ##########################################
 
-people.txt: REQUEST_11-0058_Criminal_2005-2009.raw
-	cat $< | grep "^[0].*"  > $@
+people.txt: REQUEST\ 11-0058\ Criminal\ 2005-2009.txt
+	cat "$<" | grep "^[0].*"  > $@
 
-charges.txt: REQUEST_11-0058_Criminal_2005-2009.raw
-	cat $< | grep "^[^0].*"  > $@
+charges.txt: REQUEST\ 11-0058\ Criminal\ 2005-2009.txt
+	cat "$<" | grep "^[^0].*"  > $@
 
 %.csv: %.txt
 	in2csv -s $*_schema.csv $< > $*.csv
